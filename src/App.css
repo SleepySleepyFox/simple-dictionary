@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 768px) {
+  .header-list{
+    justify-content: center;
   }
+ .wordPhonetics{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .wordPhonetics > h1,small, img{
+    margin-bottom: 0%;
+    align-self: center;
+  }
+  .wordPhonetics > img{
+    display: none;
+  }
+  p{
+    text-align: center;
+  }
+  .content-container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .inpt{}
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  padding: 0 45px 0 45px
+}
+/* Header style */
+.header-list{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  list-style: none;
+  gap: 5px;
+  justify-content: baseline;
+  padding-left: 15px;
+  margin-bottom: 0px;
+}
+a{
+  text-decoration: none;
+  color: rgb(77, 77, 77);
 }
 
-.App-link {
-  color: #61dafb;
+/* Main style */
+
+.inpt{
+  border: solid rgb(77, 77, 77) 1.8px;
+  border-radius: 25px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+input{
+  border: none;
+  border-radius: 25px;
+  width: 100%;
+  text-align: calc(15px);
+}
+input:focus{
+  outline: none;
+}
+.submt{
+  border: none;
+  border-radius: 100%;
+  background-color: transparent;
+  height: 15px;
+}
+.submt > img{
+  height: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.book-svg{
+  padding: 0;
+  margin: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.wordPhonetics{
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+.play_sound{
+  width: 16px;
+  height: 16px;
+  align-self: baseline;
+}
+
+.err_face, .err_text{
+  padding: 0%;
+  margin: 0%;
+  text-align: center;
 }
